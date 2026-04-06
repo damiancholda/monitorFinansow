@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="view-login" class="auth-container">
+    <div class="auth-card">
+        <header class="auth-header">
+            <div class="logo-icon">📊</div>
+            <h1>Monitor Zasobów</h1>
+            <p class="subtitle">Witaj ponownie!</p>
+        </header>
+
+        <form id="login-form" onsubmit="return false;">
+            <div class="input-group">
+                <label for="login-username">Login</label>
+                <input type="text" id="login-username" placeholder="Wpisz swój login" required>
+            </div>
+
+            <div class="input-group">
+                <label for="login-password">Hasło</label>
+                <input type="password" id="login-password" placeholder="Wpisz hasło" required>
+            </div>
+
+            <div class="auth-options">
+                <label class="checkbox-container">
+                    <input type="checkbox" id="remember-me">
+                    <span class="checkmark"></span>
+                    Zapamiętaj mnie
+                </label>
+                <a href="#" class="forgot-password">Zapomniałeś hasła?</a>
+            </div>
+
+            <p id="login-error" class="error-message"></p>
+
+            <button type="submit" id="btn-login" class="btn-primary">Zaloguj</button>
+        </form>
+    </div>
+</section>
+    
+</body>
+</html>
