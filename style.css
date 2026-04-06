@@ -32,10 +32,16 @@ body {
 /* Kontener centrujący na środku ekranu */
 .auth-container {
     display: flex;
+    position: absolute;
+    min-width: 400px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000s;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    padding: 20px;
+    padding: 5rem;
     background-color: var(--bg-color);
 }
 
@@ -64,6 +70,10 @@ body {
 .input-group {
     text-align: left;
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
 }
 
 .input-group label {
@@ -127,4 +137,7 @@ body {
 
 .btn-primary:active {
     transform: scale(0.98);
+}
+.hidden{
+    display: none !important;
 }
